@@ -1,0 +1,26 @@
+{
+  "name": "1-1_study",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format": "npx prettier --write --cache .",
+    "lint": "npx eslint --cache ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plumpsqrl9744/to-be-a-good-communicator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plumpsqrl9744/to-be-a-good-communicator/issues"
+  },
+  "homepage": "https://github.com/plumpsqrl9744/to-be-a-good-communicator#readme",
+  "dependencies": {
+    "eslint": "^8.39.0",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier": "^2.8.8"
+  }
+}

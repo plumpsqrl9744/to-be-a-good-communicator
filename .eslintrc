@@ -1,0 +1,8 @@
+//JSON, + comment!
+
+{
+    "rules": {
+        "no-var" : "error",
+        "eqeqeq" : "error"
+    }
+}
