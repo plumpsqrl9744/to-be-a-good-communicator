@@ -2,7 +2,7 @@
 
 개발자가 주로 작성하는 문서는 commit, PR, 그리고 code 입니다. 이러한 문서를 통해 개발자들은 서로 의도를 표현하고, 피드백을 주고 받고, 팀의 능률을 올리기 위해 노력합니다. 따라서 이러한 문서들의 중요성을 인식하고 이를 잘 작성하고자 하는 노력은 굉장히 중요합니다.
 
-따라서 그와 관련된 라이브러리인 eslint, prettier, husky를 정리하겠습니다.
+따라서, 관련 라이브러리인 eslint, prettier, husky를 정리!
 
 ## install
 ```javasctipt
@@ -104,7 +104,7 @@ module.exports = {
 
 * `npx husky add .husky/pre-commit "npm run format"`
     * 허스키로 추가할건데, pre-commit 훅을 추가할 것이다. 그리고 pre-commit 할 때 `"npm run format"`을 실행하라는 의미
-    
+
 * `npx husky add .husky/pre-push "npm run lint"`
     * 허스키로 추가할건데, pre-push 훅을 추가할 것이다. 그리고 pre-push 할 때 `"npm run lint"`을 실행하라는 의미
     * 다시말해, git push 전 `npm run lint` 명령어를 실행시키는 hook이다.
