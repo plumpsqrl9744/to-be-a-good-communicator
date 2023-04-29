@@ -36,6 +36,7 @@ module.exports = {
     *  `npx prettier --watch .` 해당 명령어로는 파일의 내용을 변경하고 저장까지 할 수 있지만, 변경되지 않은 모든 파일에 대해 포맷팅을 한다.
     * 따라서 `--cache`옵션을 추가해 변경된 파일에만 포맷팅을 적용할 수 있다. 
 
+
 ## ESLint
 
 ### 설정방법
@@ -61,6 +62,7 @@ module.exports = {
     *  디렉토리의 모든 파일 중 변경된 파일만 검사
     *  해당 명령어를 사용하면 자동으로 .eslintcache 파일이 생성되는데 이것은 .gitignore에 넣어주는 것이 좋다.
 
+
 ## Husky
 
 ### 도입배경
@@ -80,5 +82,28 @@ module.exports = {
 
 ### 명령어
 
+* `npx husky install` 이 명령어를 실행해야 실제 허스키에 등록한 git hook이 실제 git hook으로 실행가능하다. (처음 husky 세팅하는 사람만 실행 필요)
+* 그런데 여기서 git clone을 받게되면 팀원들이 모두 husky를 다운받아야 한다.
+* 하지만, 또 다른 npm hook을 추기해주면 이것을 해결할 수 있다.
+
+```JS
+/// package.json
+
+{
+    "script" : {
+        "postinstall" : "husky install"
+    },
+}
+```
+* <strong>이는 npm을 install 이후에 자동으로 husky가 install된다.</strong>
+<br>
+
+### ❗️❗️ git hook 추가 명령어 ❗️❗️
+
+<br>
+
+* `npx husky add .husky/pre-commit "npm run format"`
+    * git gook
+* `npx husky add .husky/pre-commit "npm run format"`
 
 
