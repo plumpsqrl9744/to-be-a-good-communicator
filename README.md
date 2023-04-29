@@ -87,7 +87,7 @@ module.exports = {
 * 하지만, 또 다른 npm hook을 추기해주면 이것을 해결할 수 있다.
 
 ```JS
-/// package.json
+// package.json
 
 {
     "script" : {
@@ -98,12 +98,14 @@ module.exports = {
 * <strong>이는 npm을 install 이후에 자동으로 husky가 install된다.</strong>
 <br>
 
-### ❗️❗️ git hook 추가 명령어 ❗️❗️
+#### ❗️❗️ git hook 추가 명령어 ❗️❗️
 
 <br>
 
 * `npx husky add .husky/pre-commit "npm run format"`
-    * git gook
-* `npx husky add .husky/pre-commit "npm run format"`
+    * 허스키로 추가할건데, pre-commit 훅을 추가할 것이다. 그리고 pre-commit 할 때 `"npm run format"`을 실행하라는 의미
+* `npx husky add .husky/pre-push "npm run lint"`
+    * 허스키로 추가할건데, pre-push 훅을 추가할 것이다. 그리고 pre-push 할 때 `"npm run lint"`을 실행하라는 의미
+    * 다시말해, git push 전 `npm run lint` 명령어를 실행시키는 hook이다.
 
 
