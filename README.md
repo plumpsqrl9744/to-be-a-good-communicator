@@ -70,7 +70,7 @@ module.exports = {
 
 ### 실행방안
 * git hook 도입
-> hook이란? <br>
+> <Strong>hook이란?</Strong> <br>
 특정 상황에서 실행되는 script or 명령어 같은 것들을 모두 hook이라함.<br>
 husky를 사용하면 commit, push...등 터미널에서 git을 실행할 때, 특정 상황에서 어떤 조건을 만족하지 못하면 해당 단계를 진행할 수 없도록 강제한다.
 * git hook은 설정이 까다롭고, 팀원 모든 팀원들이 사전에 repo를 클론받고 메뉴얼하게 사전 과정을 수행해야지만 hook이 실행됨을 보장할 수 있다.
