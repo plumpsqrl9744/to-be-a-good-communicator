@@ -1,5 +1,5 @@
-"hello, world";
+'hello, world';
 
-var jangwoo = "jangwoo";
+const jangwoo = 'jangwoo';
 
-1 == 1
+1 === 1;

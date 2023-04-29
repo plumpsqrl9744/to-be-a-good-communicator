@@ -1,8 +1,11 @@
 //JSON, + comment!
 
 {
-    "rules": {
-        "no-var" : "error",
-        "eqeqeq" : "error"
-    }
+  "env": {
+    "es6": "true"
+  },
+  "rules": {
+    "no-var": "error",
+    "eqeqeq": "error"
+  }
 }
