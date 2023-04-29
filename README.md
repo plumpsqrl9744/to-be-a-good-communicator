@@ -104,6 +104,7 @@ module.exports = {
 
 * `npx husky add .husky/pre-commit "npm run format"`
     * 허스키로 추가할건데, pre-commit 훅을 추가할 것이다. 그리고 pre-commit 할 때 `"npm run format"`을 실행하라는 의미
+    
 * `npx husky add .husky/pre-push "npm run lint"`
     * 허스키로 추가할건데, pre-push 훅을 추가할 것이다. 그리고 pre-push 할 때 `"npm run lint"`을 실행하라는 의미
     * 다시말해, git push 전 `npm run lint` 명령어를 실행시키는 hook이다.
