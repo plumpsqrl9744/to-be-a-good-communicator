@@ -7,10 +7,10 @@
 ## install
 
 ```javasctipt
-$ npm install eslint —save—dev
-$ npm install prettier —save—dev
-$ npm install eslint-config-prettier —save—dev
-$ npm install husky —save—dev
+$ npm install eslint --save-dev
+$ npm install prettier --save-dev
+$ npm install --save-dev eslint-config-prettier
+$ npm install husky --save-dev
 ```
 
 ## Prettier
